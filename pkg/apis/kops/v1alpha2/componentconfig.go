@@ -961,6 +961,9 @@ type NodeTerminationHandlerConfig struct {
 	// EnableRebalanceDraining makes node termination handler drain nodes when the rebalance recommendation notice is received
 	// Default: false
 	EnableRebalanceDraining *bool `json:"enableRebalanceDraining,omitempty"`
+	// CordonOnly
+	// Default: false
+	CordonOnly *bool `json:"cordonOnly,omitempty"`
 
 	// EnablePrometheusMetrics enables the "/metrics" endpoint.
 	EnablePrometheusMetrics *bool `json:"prometheusEnable,omitempty"`

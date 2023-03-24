@@ -6490,6 +6490,7 @@ func autoConvert_v1alpha2_NodeTerminationHandlerConfig_To_kops_NodeTerminationHa
 	out.EnableScheduledEventDraining = in.EnableScheduledEventDraining
 	out.EnableRebalanceMonitoring = in.EnableRebalanceMonitoring
 	out.EnableRebalanceDraining = in.EnableRebalanceDraining
+	out.CordonOnly = in.CordonOnly
 	out.EnablePrometheusMetrics = in.EnablePrometheusMetrics
 	out.EnableSQSTerminationDraining = in.EnableSQSTerminationDraining
 	out.ExcludeFromLoadBalancers = in.ExcludeFromLoadBalancers
@@ -6511,6 +6512,7 @@ func autoConvert_kops_NodeTerminationHandlerConfig_To_v1alpha2_NodeTerminationHa
 	out.EnableScheduledEventDraining = in.EnableScheduledEventDraining
 	out.EnableRebalanceMonitoring = in.EnableRebalanceMonitoring
 	out.EnableRebalanceDraining = in.EnableRebalanceDraining
+	out.CordonOnly = in.CordonOnly
 	out.EnablePrometheusMetrics = in.EnablePrometheusMetrics
 	out.EnableSQSTerminationDraining = in.EnableSQSTerminationDraining
 	out.ExcludeFromLoadBalancers = in.ExcludeFromLoadBalancers

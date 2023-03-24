@@ -4457,6 +4457,11 @@ func (in *NodeTerminationHandlerConfig) DeepCopyInto(out *NodeTerminationHandler
 		*out = new(bool)
 		**out = **in
 	}
+	if in.CordonOnly != nil {
+		in, out := &in.CordonOnly, &out.CordonOnly
+		*out = new(bool)
+		**out = **in
+	}
 	if in.EnablePrometheusMetrics != nil {
 		in, out := &in.EnablePrometheusMetrics, &out.EnablePrometheusMetrics
 		*out = new(bool)

@@ -51,6 +51,9 @@ func (b *NodeTerminationHandlerOptionsBuilder) BuildOptions(o interface{}) error
 	if nth.EnableRebalanceDraining == nil {
 		nth.EnableRebalanceDraining = fi.Bool(false)
 	}
+	if nth.CordonOnly == nil {
+		nth.CordonOnly = fi.Bool(false)
+	}
 
 	if nth.EnablePrometheusMetrics == nil {
 		nth.EnablePrometheusMetrics = fi.Bool(false)

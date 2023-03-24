@@ -5318,6 +5318,9 @@ spec:
                 description: NodeTerminationHandler determines the cluster autoscaler
                   configuration.
                 properties:
+                  cordonOnly:
+                    description: 'CordonOnly Default: false'
+                    type: boolean
                   cpuRequest:
                     anyOf:
                     - type: integer
